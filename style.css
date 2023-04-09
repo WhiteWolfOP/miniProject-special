@@ -1,0 +1,94 @@
+body
+{
+  background-color: black;
+  width: 100%;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.box
+{
+  background-color: aliceblue;
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 8%;
+}
+
+.jelly
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin:auto;
+  width: 200px;
+  height: 200px;
+  transform: translateY(300px);
+  /* height: 200px; */
+  background-color: aliceblue;
+  border-radius: 50%;
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  box-shadow: 0px 0px 100px 5px #9edee8, 0px 0px 50px 5px #7ecede, 0px 0px 15px 5px #7eb9de;
+}
+
+.jelly .eye
+{
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  background-color: #57abd9;
+  border-radius: 50% 50% 0px 0px;
+  
+}
+
+.jelly .mouth
+{
+  
+  background-color: #57abd9;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px 5px 50% 50%;
+  /* position: absolute;
+  left: 40%;
+  top: 100px;
+  border-radius: 0px 0px 50% 50%; */
+
+
+}
+
+.jelly .eye1
+{
+  top: 60px;
+  left: 50px;
+}
+
+.jelly .eye2
+{
+  top: 60px;
+  right: 50px;
+}
+
+@keyframes bounce {
+
+  from
+  {
+    transform: translateY(300px);
+    width: 250px;
+    height: 200px;
+  }
+  to
+  {
+
+    transform: translateY(50px);
+    width: 200px;
+    height: 220px;
+    
+  }
+  
+}
